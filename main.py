@@ -8,42 +8,42 @@
 # თუ BMI მეტია 25-ზე, გამოიტანეთ ინფო რომ ის არის overweight
 
 
-# weight = int(input("input your weigth in KG: "))
-# height = float(input("input your height in Meter: "))
+weight = int(input("input your weigth in KG: "))
+height = float(input("input your height in Meter: "))
 
-# BMI = weight / (height ** 2) 
-# if BMI < 19:
-#     print("you are underweight")
-# elif 19 <= BMI <= 26:
-#     print("you are not normalweight")
-# elif BMI > 26:
-#     print("you are overweight")
+BMI = weight / (height ** 2) 
+if BMI < 19:
+    print("you are underweight")
+elif 19 <= BMI <= 26:
+    print("you are not normalweight")
+elif BMI > 26:
+    print("you are overweight")
 
 
 # დავალება 2:
 # დაწერეთ პროგრამა, რომელიც მომხმარებელს შეეკითხება რიცხვს და გამოითვლის არ რიცხვის ფაქტორიალს, შეგახსენებთ რომ ფაქტორიალი 
 # არის ამ რიცხვის ნამრავლი ყველა მთელ რიცხვზე 1-მდე, ანუ 5-ის ფაქტორიალი არის 5 X 4 X 3 X 2 X 1 (დაწერეთ for ლუპის გამოყენებით)
 
-# number = int(input("input the number: ")) 
+number = int(input("input the number: ")) 
 
-# if number == 0:
-#     print("რიცხვის ფაქტორიალი არის 0")
-# elif number == 1:
-#     print("რიცხვის ფაქტორიალი არის 1")
-# elif number < 0 :
-#     print("გთხოვთ შეიტანეთ დადებითი რიცხვი")
-# else: 
-#     factorial = 1
-#     for i in range(2, number + 1):
-#         factorial *= i
-#     print(f"ფაქტორიალი არის: {factorial}")
+if number == 0:
+    print("რიცხვის ფაქტორიალი არის 0")
+elif number == 1:
+    print("რიცხვის ფაქტორიალი არის 1")
+elif number < 0 :
+    print("გთხოვთ შეიტანეთ დადებითი რიცხვი")
+else: 
+    factorial = 1
+    for i in range(2, number + 1):
+        factorial *= i
+    print(f"ფაქტორიალი არის: {factorial}")
 
 
 # დვალება 3:  დაწერეთ გამრავლების ტაბულა, მაგალითად ასეთი სახით:
 
-# for i in range(1, 10):
-#     for j in range (1, 10):
-#         print(f"{i} * {j} = {i * j} ")
+for i in range(1, 10):
+    for j in range (1, 10):
+        print(f"{i} * {j} = {i * j} ")
 
 
 # დვალება 4:
